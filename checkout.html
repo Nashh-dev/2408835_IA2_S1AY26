@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout - Real Drip Clothing Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <center><h1><span class="material-icons">water_drop</span> REAL DRIP</h1></center>
+    <h1>Checkout</h1>
+    <div class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <h2>Checkout Summary</h2>
+
+    <div id="checkout-summary">
+      <div><strong>Crew Neck T-Shirt</strong> — 1 x $1500.00 = $1500.00</div>
+      <div><strong>Sweatshirt</strong> — 1 x $2000.00 = $2000.00</div>
+      <div>
+        <hr>
+        <p>Subtotal: $3500.00</p>
+        <p>Discount: $0.00</p>
+        <p>Tax (15%): $525.00</p>
+        <h3>Total: $4025.00</h3>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3>Shipping Details</h3>
+    <form id="checkout-form" action="#" method="post">
+      <label class="formtext">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label class="formtext">Address:</label><br>
+      <textarea id="address" name="address" rows="3" required></textarea><br><br>
+
+      <label class="formtext">Amount Being Paid ($):</label><br>
+      <input type="number" id="amountPaid" name="amountPaid" required><br><br>
+     
+        <a href="invoice.html"><button class="checkoutbtns" type="button">Confirm</button></a>
+        <button class="checkoutbtns" type="reset">Cancel</button>
+        <a href="cart.html"><button class="checkoutbtns" type="button">Clear All</button></a>
+        <a href="invoice.html"><button class="checkoutbtns" type="button">Checkout</button></a>
+        <a href="index.html"><button class="checkoutbtns" type="button">Close</button></a>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div>
+      <p>&copy; 2025 Real Drip Clothing Store</p>
+</body>
+</html>
